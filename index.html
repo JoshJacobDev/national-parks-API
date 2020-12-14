@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="center">
+        <h1>National Parks Search</h1>
+    </header>
+    <main>
+        <p class="center">Example Inputs: NV, CA, UT</p>
+        <form id="js-form" class="center">
+            <label for="js-search-state">State(s):</label>
+            <input type="text" name="js-search-state" id="state-submission" required>
+
+            <label for="js-results-limit">Result limit:</label>
+            <input type="number" name="js-results-limit" id="max-results" value="10" min="1" max="50">
+
+            <input type="submit" value="Search for Parks">
+        </form>
+        <p id="js-error-message" class="center"></p>
+        <section id="park-results" class="hidden">
+            <p id="results" class="center"></p></p>
+            <p id="park-list"></p>
+            <p id="js-error-message" class="error-message"></p>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
